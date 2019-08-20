@@ -56,7 +56,7 @@ class MainWindow(Gtk.Window):
         self.add(mainvbox)
 
     def __when_edit_users_button_clicked(self,button):
-        usersconfigcindow = UsersConfigWindow(user_db=self.__user_db,                           
+        usersconfigcindow = UsersConfigWindow(parent=self,user_db=self.__user_db,                           
                                               icon_show_location="./icons/132906.svg", 
                                               icon_hide_location="./icons/130516.svg")
         usersconfigcindow.connect("delete-event",usersconfigcindow._quit)
