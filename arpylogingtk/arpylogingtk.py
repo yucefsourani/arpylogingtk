@@ -1243,7 +1243,7 @@ class LoginWindow(Gtk.Window):
             GLib.idle_add(parent.set_sensitive,True)
         GLib.idle_add(parent.set_sensitive,True)
         
-    def __on__success(self,username,isadmin,):
+    def __on__success(self,username,isadmin):
         self.emit("onsuccess",username,isadmin,self.user_db)
 
 
